@@ -25,5 +25,11 @@ function agregarAmigo(){
     }
 
 
+listaDeAmigos.push(nombre.toLowerCase());
+
+mostrarAmigos();
+
+document.getElementById("amigo").value = "";
+
 
 }
