@@ -30,13 +30,22 @@ listaDeAmigos.push(nombre.toLowerCase());
 mostrarAmigos();
 
 document.getElementById("amigo").value = "";
-
 }
- 
 
-//probando si se ven y guardan los amigos ingresados
+
 function mostrarAmigos() {
-    console.log(listaDeAmigos.join(", "));
+
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+    for (let i = 0; i < listaDeAmigos.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = listaDeAmigos[i];
+        lista.appendChild(li);
+    }
 }
+
+
+
+
 
 
