@@ -31,5 +31,12 @@ mostrarAmigos();
 
 document.getElementById("amigo").value = "";
 
-
 }
+ 
+
+//probando si se ven y guardan los amigos ingresados
+function mostrarAmigos() {
+    console.log(listaDeAmigos.join(", "));
+}
+
+
